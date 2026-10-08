@@ -8,10 +8,10 @@
 
 | Member | Contribution |
 | ------ | ------------ |
-| [TODO: name] | [TODO: contribution] |
-| [TODO: name] | [TODO: contribution] |
-| [TODO: name] | [TODO: contribution] |
-| [TODO: name] | [TODO: contribution] |
+| Vishnu Girish | App and Demo: Built the Streamlit app and CLI, code-evidence view and similar-issue check; demo and deployment |
+| Gopi Krishna | Retrieval: Built hybrid code search: embeddings, exact on-screen string matching and stack-trace file hints |
+| Raghav VS | Evaluation: Built the evaluation set and harness; measured hit@k with and without the screenshot |
+| Sridharan Kannan | Model Integration and submission: Integrated Gemma 4 (vision, rerank, writing), prompt design and error handling; documentation and submission |
 
 ## Problem Statement
 
