@@ -1,0 +1,10 @@
+.venv
+.env
+.cache
+out
+.git
+.gitignore
+**/__pycache__
+.pytest_cache
+eval/results
+eval/screenshots
