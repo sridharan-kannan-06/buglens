@@ -1,0 +1,15 @@
+Your previous reply could not be used.
+
+The problem was:
+{{error}}
+
+Your previous reply was:
+<<<PREVIOUS_REPLY
+{{previous}}
+PREVIOUS_REPLY>>>
+
+Reply again with ONE valid JSON object and nothing else: no markdown, no code fences, no explanation. Fix the problem described above. Escape quotes and newlines inside JSON strings.
+
+The original task follows. Its rules still apply, including the SECURITY RULE.
+
+{{original_prompt}}
