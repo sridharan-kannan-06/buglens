@@ -1,0 +1,32 @@
+# EXAMPLE ONLY. Every value below is a PLACEHOLDER, not a real bug and not a real result.
+#
+# This file documents the format of an eval set. To build a real one:
+#   1. Copy this file to eval/cases.yaml.
+#   2. Delete the `example: true` line (the runner refuses to run while it is there).
+#   3. Replace the placeholder case with real cases. This helper prints a stanza
+#      to review and paste:  python -m buglens.eval.collect ISSUE_URL
+#   4. Run:  python -m buglens.eval run eval/cases.yaml
+#
+# Fields of one case:
+#   repo         URL of the public GitHub repository.
+#   ref          Commit sha BEFORE the fix was merged. BugLens analyses the code at this commit,
+#                so it cannot see the fix.
+#   issue_url    The original issue (kept for reference and for the result tables).
+#   screenshot   Path to the bug screenshot, relative to the folder you run the command from
+#                (or to this file). Leave it empty for cases that are text-only.
+#   text         The one-line description a user would type. Do not include file names
+#                or anything else the reporter could not have known.
+#   fixed_files  Ground truth: paths changed by the real fix, as they were at `ref`.
+#                A case is a hit at k when any of these is among the top k suspected files.
+
+example: true
+
+cases:
+  - repo: https://github.com/OWNER/REPO
+    ref: 0000000000000000000000000000000000000000
+    issue_url: https://github.com/OWNER/REPO/issues/123
+    screenshot: eval/screenshots/OWNER__REPO__123_1.png
+    text: "One-line description of the bug, as a user would write it"
+    fixed_files:
+      - path/to/file_changed_by_the_fix.py
+      - path/to/another_changed_file.py
