@@ -299,7 +299,7 @@ More detail, including a troubleshooting table: [RUN_AND_TEST.md](RUN_AND_TEST.m
 
 ## Devpost Submission
 
-**Devpost Project:** 
+**Devpost Project:**   https://dev.to/raghav_vs_b582b34b67d1d01/buglens-4h9f
 
 
 ## Credits and License
