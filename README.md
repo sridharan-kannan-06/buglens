@@ -4,7 +4,7 @@
 
 ## Team
 
-**Team Name:** [TODO: team name]
+**Team Name:** Runtime Terrors
 
 | Member | Contribution |
 | ------ | ------------ |
@@ -27,7 +27,7 @@ That work falls on maintainers, who are usually volunteers. People who use the s
 
 ### Why We Chose This Problem
 
-[TODO: team to confirm or rewrite in your own words] The event is a Hacktoberfest hack day, and Hacktoberfest is about getting more people to contribute to open source. The step between "I can see the bug" and "I know which file to open" is where many new contributors stop. A screenshot already contains strong clues about where a bug lives (exact button labels, error messages, component names), and those clues are normally thrown away when the report is typed up.
+The event is a Hacktoberfest hack day, and Hacktoberfest is about getting more people to contribute to open source. The step between "I can see the bug" and "I know which file to open" is where many new contributors stop. A screenshot already contains strong clues about where a bug lives (exact button labels, error messages, component names), and those clues are normally thrown away when the report is typed up.
 
 ## Solution
 
@@ -142,11 +142,11 @@ The harness in `buglens/eval/` replays real, already-fixed issues:
 - `python -m buglens.eval.collect ISSUE_URL` is a best-effort helper. It looks for the merged pull request that closed an issue, lists the files it changed (tests, docs and lockfiles excluded), picks the commit before the fix, downloads images from the issue body and prints a YAML stanza. Its output must be reviewed by hand.
 - `python -m buglens.eval run eval/cases.yaml` runs every case at its pre-fix commit, once with the screenshot and once with `--no-image`, and reports hit@1, hit@3, hit@5 and MRR. A hit at k means that a file changed by the real fix is among the top k suspected files (exact path match).
 
-**Results:** [TODO: run python -m buglens.eval and paste real results]
+
 
 ## Implementation During the Hackathon
 
-[TODO: team to confirm what was built during the event] The repository contains:
+ The repository contains:
 
 - The nine-stage pipeline described above (`buglens/`), with on-disk caching of repositories, indexes and embeddings.
 - Two model backends: Gemma through the Gemini API, and an experimental Ollama backend.
@@ -156,28 +156,21 @@ The harness in `buglens/eval/` replays real, already-fixed issues:
 - An offline test suite (`tests/`, 184 tests, no network and no API key needed) that covers URL parsing, file filtering, chunking, template parsing, retrieval scoring, file-name hints, code evidence, similar issues, embedding reuse, JSON parsing and repair, the hallucination guard, label filtering, the eval metrics and the full pipeline with a fake model.
 - A go/no-go script for the model (`scripts/check_gemma.py`), an end-to-end smoke test (`scripts/smoke_test.py`), a Dockerfile and deployment notes.
 
-### Team Contributions
 
-- **[TODO: member name]:** [TODO: contribution]
-- **[TODO: member name]:** [TODO: contribution]
-- **[TODO: member name]:** [TODO: contribution]
-- **[TODO: member name]:** [TODO: contribution]
 
-## Challenges and Learnings
 
-[TODO: team to write. Describe the real technical or product challenges you ran into during the event and what you learned from them.]
 
 ## Working Application
 
-**Live Application:** [TODO: live URL]
+**Live Application:** 
 
 [TODO: once deployed, explain how to reach the app and what can be tested.] Locally, the app starts with `streamlit run app.py`: enter a public GitHub repository URL, upload a PNG, JPG or WebP screenshot of a bug, describe it in one sentence and press **Analyze**. The result has four tabs (issue draft, suspected files with code evidence, contributor brief, similar issues) plus what the model saw in the screenshot, stage timings and warnings.
 
 ## Demo Video
 
-**Demo Video:** [TODO: video URL]
+**Demo Video:** https://youtu.be/oqrzUhoeMzA?si=vYnxvwFyP4OKgUlP
 
-[TODO: short walkthrough of the main flow: repository URL, screenshot and sentence in; issue draft, suspected files and contributor brief out.]
+
 
 ## Open Source and AI Usage
 
@@ -207,7 +200,7 @@ BugLens does not train or fine-tune any model. Repositories analysed by BugLens 
 
 ### AI-assisted development
 
-[TODO: team to confirm] The codebase was scaffolded with Claude Code during the hackathon and reviewed by the team.
+ The codebase was scaffolded with Claude Code during the hackathon and reviewed by the team.
 
 ## Setup and Usage
 
@@ -306,9 +299,8 @@ More detail, including a troubleshooting table: [RUN_AND_TEST.md](RUN_AND_TEST.m
 
 ## Devpost Submission
 
-**Devpost Project:** [TODO: Devpost project URL]
+**Devpost Project:** 
 
-[TODO: confirm that the Devpost page is complete: description, links, media and team details.]
 
 ## Credits and License
 
@@ -319,7 +311,7 @@ More detail, including a troubleshooting table: [RUN_AND_TEST.md](RUN_AND_TEST.m
 - The maintainers of ONNX Runtime, NumPy, pydantic, Streamlit, requests, Pillow, PyYAML, python-dotenv and pytest.
 - GitHub for the REST API.
 - The README structure follows the template provided by the organisers of Hacktoberfest Hack Day Coimbatore 2026.
-- [TODO: team to add any other people or resources to credit.]
+
 
 ### License
 
