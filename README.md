@@ -316,27 +316,3 @@ More detail, including a troubleshooting table: [RUN_AND_TEST.md](RUN_AND_TEST.m
 ### License
 
 MIT. See [LICENSE](LICENSE).
-
-## Submission Checklist
-
-- [x] Project title and description added
-- [ ] All team members listed
-- [x] Problem clearly explained
-- [ ] Reason for choosing the problem explained
-- [x] Solution and key features documented
-- [x] Innovation and differentiation explained
-- [x] Architecture included
-- [x] Technical implementation documented
-- [ ] Work completed during the hackathon documented
-- [ ] Team contributions documented
-- [ ] Working application is functional
-- [ ] Live application link added where applicable
-- [ ] Demo video added
-- [ ] AI and open-source components documented
-- [ ] Setup and usage instructions tested
-- [ ] Challenges and learnings documented
-- [ ] Devpost submission completed
-- [ ] Devpost link added
-- [x] Credits added
-- [x] License added
-- [ ] Repository is organized and complete
