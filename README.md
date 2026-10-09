@@ -297,9 +297,9 @@ The first analysis of a repository is the slow one, because every chunk is embed
 
 More detail, including a troubleshooting table: [RUN_AND_TEST.md](RUN_AND_TEST.md). Deployment notes: [docs/DEPLOY.md](docs/DEPLOY.md).
 
-## Devpost Submission
+## dev.to Post
 
-**Devpost Project:**   https://dev.to/raghav_vs_b582b34b67d1d01/buglens-4h9f
+**Dev.to: **   https://dev.to/raghav_vs_b582b34b67d1d01/buglens-4h9f
 
 
 ## Credits and License
